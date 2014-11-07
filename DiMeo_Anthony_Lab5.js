@@ -19,12 +19,12 @@ to divide by zero, the code should not throw an error; it should give the user u
 */
 
 
-	var x;
-	var y;
-	var z;
+	var numberOne;
+	var numberTwo;
+	var total;
+	var choice;
 	
 	
-
 	
 
 		var addition = function(numberOne, numberTwo) {
@@ -33,6 +33,61 @@ to divide by zero, the code should not throw an error; it should give the user u
 			
 };
 
+		var subtraction = function(numberOne, numberTwo) {
+			subtraction = numberOne - numberTwo;
+			return subtraction;
+};
+
+		var multiplication = function(numberOne, numberTwo) {
+			multiplication = numberOne * numberTwo;
+			return multiplication;
+};
+
+		var division = function(numberOne, numberTwo) {
+			division = numberOne/numberTwo;
+			return division;
+};
+
+console.log("Welcome to the calculator app");
+		
+		numberOne = parseFloat(prompt("Enter the first number:"));
+		
+		numberTwo = parseFloat(prompt("Enter the second number:"));
+		
+		choice = prompt("Please select from one of the following:  +, -, *, /");
+
+		
+		
+		
+		if  (choice === "+") {
+		    console.log(numberOne + "+" + numberTwo + "=");
+			total = addition(numberOne, numberTwo);
+			
+			
+			}  else if (choice === "-") {
+			console.log(numberOne + "-" + numberTwo + "=");
+			total = subtraction(numberOne, numberTwo);
+		
+			
+			}  else if (choice === "*") {
+			console.log(numberOne + "*" + numberTwo + "=");
+			total = multiplication(numberOne, numberTwo);
+				
+			}  else if (choice === "/") {
+			console.log(numberOne + "/" + numberTwo + "=");
+			total = division(numberOne, numberTwo);
+		 if (total === 0) {
+			console.log("You cannot divide by zero silly");
+		} else {
+			console.log();
+		}
+			
+}	
+
+		console.log(total);
+		console.log("Refresh the browser for another solution");
+
+		
 
 
 
