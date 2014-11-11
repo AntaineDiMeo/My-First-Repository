@@ -1,0 +1,29 @@
+/**
+ *Anthony DiMeo values
+*/
+
+var jsonData = {
+	
+	"music":
+	[
+	{
+		"artist":       "Skrillex",
+		"genre":      "Electronic",
+		"song":       "RaggaBomb",
+		"year":      2014
+	},
+	{
+		"artist":        "Inna",
+		"genre":       "Pop",
+		"song":         "Live your life",
+		"year":        "2012"
+	},
+	{
+		"artist":         "John Legend",
+		"genre":        "Soulful",
+		"song":        "All of me",
+		"year":        "2013"
+	}
+	]
+};
+
